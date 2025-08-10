@@ -1,0 +1,55 @@
+/* Reuse variables and reset from previous task */
+
+/* What We Do Section */
+.what-we-do {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}

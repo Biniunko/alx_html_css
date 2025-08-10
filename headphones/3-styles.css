@@ -1,0 +1,67 @@
+/* Contact Us Section */
+.contact-us {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-us .section-description {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(255, 101, 101, 0.4);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px 15px;
+}
+
+/* Animation on load */
+.contact-us {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

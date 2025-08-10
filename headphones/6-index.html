@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Headphones — Our results (CSS pentagons)</title>
+
+    <!-- custom icon font (from previous tasks) -->
+    <link rel="stylesheet" href="holberton_school-icon.css">
+
+    <!-- main stylesheet for this task -->
+    <link rel="stylesheet" href="6-styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER / HERO (kept simple, same structure as before) -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="images/logo.png" alt="Headphones Logo"></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#what">What we do</a></li>
+                    <li><a href="#results">Our results</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <button class="btn-primary">Sign up</button>
+        </div>
+
+        <div class="container hero">
+            <div class="hero-text">
+                <h1>High-fidelity sound for everyone</h1>
+                <p>We blend design and engineering to deliver immersive audio experiences.</p>
+                <button class="btn-primary">Discover more</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- WHAT WE DO -->
+    <section id="what" class="what-we-do">
+        <div class="container">
+            <h2>What we do…</h2>
+            <p class="section-description">We design premium audio experiences — from hardware to software.</p>
+
+            <div class="services">
+                <div class="service">
+                    <span class="holberton_school-icon-ic_sound icon" aria-hidden="true"></span>
+                    <h3>Design</h3>
+                    <p>Precision-crafted headphones and accessories.</p>
+                </div>
+                <div class="service">
+                    <span class="holberton_school-icon-ic_video icon" aria-hidden="true"></span>
+                    <h3>Engineering</h3>
+                    <p>Acoustic engineering and digital signal processing.</p>
+                </div>
+                <div class="service">
+                    <span class="holberton_school-icon-ic_music icon" aria-hidden="true"></span>
+                    <h3>Software</h3>
+                    <p>Companion apps and firmware updates.</p>
+                </div>
+                <div class="service">
+                    <span class="holberton_school-icon-ic_hearing icon" aria-hidden="true"></span>
+                    <h3>Support</h3>
+                    <p>Customer-first warranty and service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR RESULTS (pentagons drawn with CSS) -->
+    <section id="results" class="our-results">
+        <div class="container">
+            <h2>Our results speak for themselves</h2>
+            <p class="section-description">Metrics gathered from our latest releases and user studies.</p>
+
+            <div class="results">
+                <div class="result">
+                    <!-- CSS pentagon (no image) -->
+                    <div class="pentagon" aria-hidden="true"></div>
+
+                    <!-- percentage badge on top -->
+                    <div class="circle">+2%</div>
+                    <h3>Noise reduction</h3>
+                    <p>Active noise cancellation improvements across models.</p>
+                </div>
+
+                <div class="result">
+                    <div class="pentagon" aria-hidden="true"></div>
+                    <div class="circle">+50%</div>
+                    <h3>Battery life</h3>
+                    <p>Average battery life increase over the previous generation.</p>
+                </div>
+
+                <div class="result">
+                    <div class="pentagon" aria-hidden="true"></div>
+                    <div class="circle">+100%</div>
+                    <h3>Customer satisfaction</h3>
+                    <p>Doubling of user satisfaction scores after redesign.</p>
+                </div>
+
+                <div class="result">
+                    <div class="pentagon" aria-hidden="true"></div>
+                    <div class="circle">+200%</div>
+                    <h3>Warranty claims reduced</h3>
+                    <p>Significant reduction in warranty-related returns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <h2>Contact us</h2>
+            <p class="section-description">Questions? Send us a message and we’ll reply within 48 hours.</p>
+
+            <form class="contact-form" action="#" method="POST" novalidate>
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-row">
+                    <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <a class="footer-logo" href="#"><img src="images/logo.png" alt="Headphones Logo"></a>
+            <div class="social-icons" aria-label="Social links">
+                <a href="#" aria-label="Facebook"><span class="holberton_school-icon-ic_facebook"></span></a>
+                <a href="#" aria-label="Twitter"><span class="holberton_school-icon-ic_twitter"></span></a>
+                <a href="#" aria-label="Instagram"><span class="holberton_school-icon-ic_instagram"></span></a>
+            </div>
+        </div>
+        <p class="footer-text">© 2025 Headphones. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

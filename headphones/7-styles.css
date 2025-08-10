@@ -1,0 +1,30 @@
+/* Animation styles */
+.animate-item {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+}
+
+.animate-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    opacity: 0.95;
+}
+
+/* Optional: continuous subtle floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.services .animate-item,
+.results .animate-item {
+    animation: float 4s ease-in-out infinite;
+}
